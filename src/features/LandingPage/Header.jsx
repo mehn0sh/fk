@@ -67,7 +67,7 @@ const Header = () => {
                     }
                   >
                     <img
-                      src="/public/favicon.ico"
+                      src="/favicon.ico"
                       width={50}
                       height={30}
                       alt="logo"
