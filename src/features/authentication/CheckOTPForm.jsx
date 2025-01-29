@@ -21,7 +21,7 @@ const CheckOTPForm = ({ phoneNumber, onBack, onResendOTP, OTPResponse }) => {
     e.preventDefault();
     try {
       const { message, user } = await mutateAsync({ phoneNumber, otp });
-      toast.success(message);
+      toast.success("خوش آمدید");
       if (user.isActive) {
         if (user.role === "OWNER") return navigate("/owner");
         if (user.role === "FREELANCER") return navigate("/freelancer");
